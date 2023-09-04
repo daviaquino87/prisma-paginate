@@ -29,10 +29,7 @@ export class PrismaCategoriesRepository implements CategoriesRepository {
   ): Promise<PaginatedOutputDto<CategoryOutputDto>> {
     const paginate = createPaginator({ perPage: filters.perPage ?? 10 });
 
-    const categories = await paginate<
-      ICategoryProps,
-      Prisma.CategoriesFindManyArgs
-    >(
+    return paginate<CategoryOutputDto, Prisma.CategoriesFindManyArgs>(
       this.prismaCategories,
       {
         where: {},
@@ -44,20 +41,5 @@ export class PrismaCategoriesRepository implements CategoriesRepository {
         page: filters.page ?? 1,
       },
     );
-
-    const categoriesMapper: CategoryOutputDto[] = categories.data.map(
-      (item) => {
-        return {
-          id: item.id,
-          name: item.name,
-          createdAt: item.createdAt,
-        };
-      },
-    );
-
-    return {
-      data: categoriesMapper,
-      meta: categories.meta,
-    };
   }
 }
