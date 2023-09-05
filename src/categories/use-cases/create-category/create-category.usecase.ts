@@ -23,6 +23,8 @@ export class CreateCategoryUseCase {
     const category: ICategoryProps = {
       id: randomUUID(),
       name: createCategoryInputDto.name,
+      type: createCategoryInputDto.type,
+      userId: createCategoryInputDto.userId,
       createdAt: new Date(),
     };
 
@@ -32,6 +34,8 @@ export class CreateCategoryUseCase {
       categoryOutputDto: {
         id: category.id,
         name: category.name,
+        type: category.type,
+        userId: category.userId,
         createdAt: category.createdAt,
       },
     };

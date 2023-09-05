@@ -13,6 +13,8 @@ datasource db {
 model Categories {
   id        String   @id
   name      String
+  type      String
+  userId    String   @map("user_id")
   createdAt DateTime @map("created_at")
 
   @@map("categories")
