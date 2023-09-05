@@ -8,13 +8,6 @@ example of pagination with prisma and nest.js
 
 <hr>
 
-
-## Documentação
-
-[Documentação](http://localhost:3000/api)
-
-<hr>
-
 ## 🛠 Tecnologias
 
 As seguintes ferramentas foram usadas na construção do projeto:
