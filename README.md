@@ -8,9 +8,31 @@ example of pagination with prisma and nest.js
 
 <hr>
 
-## 🛠 Tecnologias
+## Running locally
 
-As seguintes ferramentas foram usadas na construção do projeto:
+Clone the project
+
+```bash
+  git clone https://github.com/daviaquino87/prisma-paginate
+```
+
+Enter the project directory
+
+```bash
+  cd prisma-paginate
+```
+
+Start the project using docker
+
+```bash
+ docker-compose up -d
+```
+
+
+
+## 🛠 Technologies
+
+The following tools were used to build the project:
 
 - [Nest.js](https://docs.nestjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
