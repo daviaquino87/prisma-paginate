@@ -15,6 +15,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Nest.js](https://docs.nestjs.com/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [prismaOrm](https://www.prisma.io/docs)
+- [Docker](https://docs.docker.com/)
 
 
 <hr>
