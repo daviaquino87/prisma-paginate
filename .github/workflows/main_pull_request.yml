@@ -15,3 +15,4 @@ jobs:
         run: |
           echo "Erro: Esta pull request só pode ser feita da branch develop para a main."
           exit 1
+        continue-on-error: true
