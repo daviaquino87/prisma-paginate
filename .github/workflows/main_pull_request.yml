@@ -12,4 +12,6 @@ jobs:
     steps:
       - name: Check if PR is from develop
         if: ${{ github.event.pull_request.base.ref != 'develop' }}
-        run: echo "Erro: Esta pull request só pode ser feita da branch develop para a main." && exit 1
+        run: |
+          echo "Erro: Esta pull request só pode ser feita da branch develop para a main."
+          exit 1
