@@ -16,4 +16,6 @@ import { ListCategoriesUseCase } from 'src/categories/use-cases/list-categories/
   ],
   controllers: [CategoriesController],
 })
-export class CategoriesModule {}
+export class CategoriesModule {
+  constructor() {}
+}
