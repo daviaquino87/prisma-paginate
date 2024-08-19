@@ -17,6 +17,7 @@ export const ApiPaginatedResponse = <TModel extends Type<any>>(
                 items: { $ref: getSchemaPath(model) },
               },
             },
+            required: ['data']
           },
           {
             properties: {
@@ -31,8 +32,18 @@ export const ApiPaginatedResponse = <TModel extends Type<any>>(
                   prev: { type: 'number' },
                   next: { type: 'number' },
                 },
+                required: [
+                  'total',
+                  'page',
+                  'lastPage',
+                  'perPage',
+                  'currentPage',
+                  'prev',
+                  'next'
+                ]
               },
             },
+            required: ['meta']
           },
         ],
       },
